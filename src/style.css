@@ -59,6 +59,16 @@ p {
     padding: 120px 60px;
 }
 @media (max-width: 960px) {
+    h1{
+        font-size: 50px;
+    }
+    .intro p {
+        font-size: 24px;
+    }
+    h2{
+            font-size: 18px;
+        }
+    
 .project{
     padding: 0;
     text-align: center;
@@ -68,7 +78,10 @@ p {
 }
 }
 
-
+.project-intro {
+        font-weight: 800;
+        font-size: 20px;
+    }
 .button-learnmore{
     text-decoration: none;
     background: var(--background-color);
