@@ -89,7 +89,7 @@ img {
     .container {
         text-align: center;
     }
-    p{
+    p {
         font-size: 15px;
     }
 }
@@ -107,4 +107,25 @@ img {
     font-size: 18px;
     line-height: 27px;
     padding: 12px 20px;
+}
+
+footer .email-link {
+    text-decoration: none;
+    color: var(--main-font-color);
+    font-size: 24px;
+}
+footer .email-link:hover {
+    color: var(--button-color);
+}
+
+footer .social-links a {
+    margin: 0 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: var(--button-color);
+    background-color: var(--background-color);
+}
+footer .social-links a:hover {
+    background-color: var(--button-color);
+    color: var(--background-color);
 }
