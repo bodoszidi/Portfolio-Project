@@ -18,7 +18,7 @@ h1 {
     font-size: 96px;
     line-height: 1;
 }
-h2{
+h2 {
     font-size: 45px;
 }
 p {
@@ -55,34 +55,34 @@ p {
     padding: 12px 20px;
 }
 
-.project{
+.project {
     padding: 120px 60px;
 }
 @media (max-width: 960px) {
-    h1{
+    h1 {
         font-size: 50px;
     }
     .intro p {
         font-size: 24px;
     }
-    h2{
-            font-size: 18px;
-        }
-    
-.project{
-    padding: 0;
-    text-align: center;
-}
-.container{
-    text-align: center;
-}
+    h2 {
+        font-size: 18px;
+    }
+
+    .project {
+        padding: 0;
+        text-align: center;
+    }
+    .container {
+        text-align: center;
+    }
 }
 
 .project-intro {
-        font-weight: 800;
-        font-size: 20px;
-    }
-.button-learnmore{
+    font-weight: 800;
+    font-size: 20px;
+}
+.button-learnmore {
     text-decoration: none;
     background: var(--background-color);
     border: 3px solid var(--button-color);
