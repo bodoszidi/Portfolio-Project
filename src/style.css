@@ -1,7 +1,7 @@
 :root {
     --main-font-color: #494948;
     --heading-font-family: "Playfair", serif;
-    --default-font-family: "Poppins" sans-serif;
+    --default-font-family: "Poppins", sans-serif;
     --button-color: #ffac00;
     --default-color: #282044;
     --background-color: #faf9f6;
@@ -20,31 +20,33 @@ h1 {
 }
 h2 {
     font-size: 45px;
+    font-family: var(--default-font-family);
 }
 p {
     font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
 }
-.about h1 {
+.container {
+    background-color: var(--background-color);
+}
+.intro-container h1 {
     font-size: 60px;
     line-height: 80px;
 }
-.about h2 {
-    font-weight: 700;
-    font-size: 22px;
+.intro-container h2 {
+    font-size: 30px;
+    line-height: 2;
+    font-weight: 900;
 }
-.about p {
-    font-size: 18px;
+.intro-container h3 {
+    font-size: 25px;
+    font-weight: 500;
 }
-.about {
-    padding: 160px 20px;
-}
-.about-content {
+.intro-content {
     margin: 30px;
 }
-
-img{
+img {
     border-radius: 4px;
 }
 .intro {
@@ -52,17 +54,10 @@ img{
     background-color: var(--background-color);
     padding: 160px 20px;
 }
-
-.intro p {
+.about p {
     font-size: 36px;
     font-weight: bold;
     margin: 0;
-}
-
-.intro h2 {
-    font-weight: normal;
-    line-height: 2;
-    font-weight: 24px;
 }
 
 .btn-contact {
@@ -83,18 +78,20 @@ img{
         font-size: 50px;
     }
     .intro p {
-        font-size: 24px;
+        font-size: 20px;
     }
     h2 {
-        font-size: 18px;
+        font-size: 25px;
     }
-
     .project {
         padding: 0;
         text-align: center;
     }
     .container {
         text-align: center;
+    }
+    p{
+        font-size: 15px;
     }
 }
 
