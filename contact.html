@@ -35,6 +35,15 @@
             src="https://kit.fontawesome.com/bdd71230e1.js"
             crossorigin="anonymous"
         ></script>
+        <script>
+            function signUp(event) {
+                event.preventDefault();
+                let input = document.querySelector("#email");
+                console.log(input.value);
+            }
+            let form = document.querySelector("form");
+            form.addEventListener("submit", signUp);
+        </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -68,13 +77,23 @@
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.html" title="Introduction">About Me</a>
+                        <a
+                            class="nav-link"
+                            href="./about.html"
+                            title="Introduction"
+                            >About Me</a
+                        >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./work.html" title="Projects">My Work</a>
+                        <a class="nav-link" href="./work.html" title="Projects"
+                            >My Work</a
+                        >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html#contact" title="Contact details"
+                        <a
+                            class="nav-link"
+                            href="/contact.html#contact"
+                            title="Contact details"
                             >Contact Me</a
                         >
                     </li>
@@ -84,38 +103,101 @@
     </nav>
 
     <body>
-        <div class="mb-5 p-2">
-            <div class="intro-content text-center">
-                <h1>Get in touch – contact details below.</h1>
-                <h2 class="p-3 m-2">by Email</h2>
+        <div class="mb-5 p-4 text-center">
+            <h1 class="mt-5 mb-4">
+                Get in touch - or drop a message with your details
+            </h1>
+
+            <form
+                action="/submit"
+                class="mx-auto text-start"
+                style="max-width: 600px"
+            >
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your email:</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Your email"
+                        required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label"
+                        >Your message:</label
+                    >
+                    <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <input
+                    class="btn btn-contact mt-4 mb-5 d-block mx-auto"
+                    type="submit"
+                    value="Send!"
+                />
+            </form>
+
+            <div
+                class="contact-info mx-auto text-center"
+                style="max-width: 400px"
+            >
+                <h3 class="p-3 m-2">Email</h3>
                 <p>
                     <a
                         class="email-address"
                         id="contact"
-                        href="mailto:bodosyd@yahoo.com"
+                        href="mailto:szidibee@gmail.com"
                         title="email address"
-                        >bodosyd@yahoo.com</a
                     >
+                        szidibee@gmail.com
+                    </a>
                 </p>
-                <h2>LinkedIn</h2>
+
+                <h3>LinkedIn</h3>
                 <p>
-                    <a href="https://www.linkedin.com/in/szidonia-b-440975207/"
-                        >@szidonia.b</a
+                    <a
+                        href="https://www.linkedin.com/in/szidonia-b-440975207/"
+                        target="_blank"
                     >
+                        @szidonia.b
+                    </a>
                 </p>
             </div>
         </div>
 
         <footer>
-          
             <div class="social-links d-flex justify-content-center mb-4">
-                <a href="https://www.instagram.com/sziszo.miszo/" target="_blank" title="Instagram" class="rounded-circle">
+                <a
+                    href="https://www.instagram.com/sziszo.miszo/"
+                    target="_blank"
+                    title="Instagram"
+                    class="rounded-circle"
+                >
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://github.com/bodoszidi?tab=repositories" target="_blank" title="GitHub" class="rounded-circle">
+                <a
+                    href="https://github.com/bodoszidi?tab=repositories"
+                    target="_blank"
+                    title="GitHub"
+                    class="rounded-circle"
+                >
                     <i class="fab fa-github"> </i>
                 </a>
-                <a href="https://www.linkedin.com/in/szidonia-b-440975207/" target="_blank" title="LinkedIn" class="rounded-circle">
+                <a
+                    href="https://www.linkedin.com/in/szidonia-b-440975207/"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="rounded-circle"
+                >
                     <i class="fab fa-linkedin"> </i>
                 </a>
             </div>
