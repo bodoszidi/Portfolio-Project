@@ -103,74 +103,83 @@
     </nav>
 
     <body>
-        <div class="mb-5 p-4 text-center">
-            <h1 class="mt-5 mb-4">
-                Get in touch - or drop a message with your details
+        <div class="container my-5">
+            <h1 class="text-center mb-5">
+                Get in touch - drop a message with your details
             </h1>
 
-            <form
-                action="/submit"
-                class="mx-auto text-start"
-                style="max-width: 600px"
-            >
-                <div class="mb-3">
-                    <label for="email" class="form-label">Your email:</label>
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        placeholder="Your email"
-                        required
-                    />
+            <div class="row justify-content-center align-items-start">
+           
+                <div class="col-12 col-md-6 mb-5">
+                    <form
+                        action="/submit"
+                        class="text-start mx-auto"
+                        style="max-width: 500px"
+                    >
+                        <div class="mb-3">
+                            <label for="email" class="form-label"
+                                >Your email:</label
+                            >
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                placeholder="Your email"
+                                required
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label"
+                                >Your message:</label
+                            >
+                            <textarea
+                                class="form-control"
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <input
+                                class="btn btn-contact btn-primary mt-4"
+                                type="submit"
+                                value="Send!"
+                            />
+                        </div>
+                    </form>
                 </div>
 
-                <div class="mb-3">
-                    <label for="message" class="form-label"
-                        >Your message:</label
-                    >
-                    <textarea
-                        class="form-control"
-                        id="message"
-                        name="message"
-                        rows="6"
-                        placeholder="Write your message here..."
-                        required
-                    ></textarea>
+                
+                <div class="col-12 col-md-6 text-center">
+                    <div class="contact-info mx-auto" style="max-width: 400px">
+                        <h3 class="p-3 m-2">Email</h3>
+                        <p>
+                            <a
+                                class="email-address"
+                                id="contact"
+                                href="mailto:szidibee@gmail.com"
+                                title="email address"
+                            >
+                                szidibee@gmail.com
+                            </a>
+                        </p>
+
+                        <h3>LinkedIn</h3>
+                        <p>
+                            <a
+                                href="https://www.linkedin.com/in/szidonia-b-440975207/"
+                                target="_blank"
+                            >
+                                @szidonia.b
+                            </a>
+                        </p>
+                    </div>
                 </div>
-
-                <input
-                    class="btn btn-contact mt-4 mb-5 d-block mx-auto"
-                    type="submit"
-                    value="Send!"
-                />
-            </form>
-
-            <div
-                class="contact-info mx-auto text-center"
-                style="max-width: 400px"
-            >
-                <h3 class="p-3 m-2">Email</h3>
-                <p>
-                    <a
-                        class="email-address"
-                        id="contact"
-                        href="mailto:szidibee@gmail.com"
-                        title="email address"
-                    >
-                        szidibee@gmail.com
-                    </a>
-                </p>
-
-                <h3>LinkedIn</h3>
-                <p>
-                    <a
-                        href="https://www.linkedin.com/in/szidonia-b-440975207/"
-                        target="_blank"
-                    >
-                        @szidonia.b
-                    </a>
-                </p>
             </div>
         </div>
 
