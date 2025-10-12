@@ -49,7 +49,21 @@ p {
     margin: 30px;
 }
 img {
+    /* this targets all images */
     border-radius: 4px;
+}
+.img-container {
+    max-height: 500px;
+    max-width: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.img-profile {
+    position: relative;
+    top: 110px;
 }
 .intro {
     text-align: center;
@@ -107,6 +121,14 @@ img {
     }
     p {
         font-size: 15px;
+    }
+    .img-container {
+        max-height: 300px;
+        max-width: 300px;
+    }
+    .img-profile {
+        top: 50px;
+        width: 300px;
     }
 }
 
